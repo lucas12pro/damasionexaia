@@ -2,3 +2,10 @@
 - [x] Implementar Dashboard, Agenda, Clientes, CRM, Atendimentos, Serviços, Equipe e Relatórios
 - [x] Implementar modais, drawer de cliente e experiência de agendamento
 - [x] Validar navegação, fluxo completo, desktop e celular
+
+- [x] Substituir Agenda por grade operacional com drag and drop
+- [x] Atualizar agendamento do cliente com disponibilidade real no mock
+- [x] Adicionar perfis simulados e permissões de Administrador, Recepção e Profissional
+- [x] Restringir Profissional a consultar produtos/pacotes e registrar venda/uso, sem administração ou contatos
+- [x] Adicionar catálogos administrativos de Produtos e Pacotes
+- [x] Validar fluxos novos em desktop e celular
