@@ -1,0 +1,4 @@
+- [ ] Criar shell SaaS responsivo exclusivo da Barbearia
+- [ ] Implementar Dashboard, Agenda, Clientes, CRM, Atendimentos, Serviços, Equipe e Relatórios
+- [ ] Implementar modais, drawer de cliente e experiência de agendamento
+- [ ] Validar navegação, fluxo completo, desktop e celular
