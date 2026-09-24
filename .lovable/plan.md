@@ -10,8 +10,8 @@ Preservar Dashboard, CRM, Clientes, Atendimentos e Relatórios, substituindo som
 - Exibir detalhes e ações simuladas ao selecionar um agendamento existente, preservando registros realizados.
 - Atualizar a experiência do cliente para data → profissional → horários realmente livres → dados pessoais → confirmação, considerando duração do serviço.
 - Adicionar um seletor demonstrativo de perfil e uma área de Acessos com permissões de Administrador, Recepção e Profissional.
-- Criar a experiência restrita do Profissional: Minha agenda, Meus atendimentos, Meu desempenho, Produtos, Pacotes e Meu perfil, sem contatos ou CRM.
-- Adicionar os módulos Produtos e Pacotes com catálogos mockados e formulários simulados; permitir registrar produto vendido ao finalizar atendimento.
+- Criar a experiência restrita do Profissional: Minha agenda, Meus atendimentos, Meu desempenho, Produtos, Pacotes e Meu perfil, sem contatos, lista de clientes ou CRM. Produtos e Pacotes serão somente para consulta e registro de venda/utilização durante o atendimento; o profissional não poderá criar, editar, excluir, alterar preços ou administrar estoque.
+- Adicionar os módulos Produtos e Pacotes com catálogos mockados e formulários administrativos simulados apenas para Administrador/Recepção; permitir ao Profissional somente consultar e registrar produto vendido ou pacote utilizado no atendimento.
 
 ## Limites preservados
 - Nenhuma autenticação, banco de dados, API, WhatsApp, pagamento ou automação real.
