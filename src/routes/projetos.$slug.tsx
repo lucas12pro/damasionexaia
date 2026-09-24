@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { projects } from "@/lib/projects";
 import { Navbar, Footer } from "@/components/site/Chrome";
+import { BarbershopDemo } from "@/components/barbershop/BarbershopDemo";
 
 export const Route = createFileRoute("/projetos/$slug")({
   loader: ({ params }) => {
@@ -38,6 +39,7 @@ export const Route = createFileRoute("/projetos/$slug")({
 
 function ProjectPage() {
   const { project } = Route.useLoaderData();
+  if (project.slug === "barbearia") return <BarbershopDemo />;
   return (
     <>
       <Navbar />
