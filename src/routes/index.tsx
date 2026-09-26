@@ -3,7 +3,7 @@ import {
   ArrowRight, ArrowDown, MessagesSquare, UserX, Hand, Layers, Sparkles, Monitor, Users, Workflow, Boxes,
   Instagram, Globe, ShoppingBag, CalendarCheck, Database, HeartHandshake, Target,
 } from "lucide-react";
-import { Navbar, Footer } from "@/components/site/Chrome";
+import { Navbar, Footer, nexaWhatsapp } from "@/components/site/Chrome";
 import { Reveal } from "@/components/site/Reveal";
 import { projects } from "@/lib/projects";
 import founder from "@/assets/founder.png.asset.json";
@@ -459,9 +459,9 @@ function FinalCta() {
           <p className="relative mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
             Vamos identificar onde a tecnologia pode simplificar sua operação, melhorar sua experiência de atendimento e criar novas oportunidades.
           </p>
-          <Link to="/" hash="contato" className="group relative mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]">
+          <a href={nexaWhatsapp} target="_blank" rel="noopener noreferrer" className="group relative mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]">
             Falar sobre meu negócio <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-          </Link>
+          </a>
           <ArrowDown aria-hidden className="relative mx-auto mt-10 text-foreground/20" size={18} />
         </div>
       </Reveal>

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Instagram, MessageCircle, Mail } from "lucide-react";
 
+export const nexaWhatsapp = "https://wa.me/5511934136539";
+
 export const navLinks = [
   { label: "Soluções", hash: "solucoes" },
   { label: "Projetos", hash: "projetos" },
@@ -46,13 +48,14 @@ export function Navbar() {
             </Link>
           ))}
         </nav>
-        <Link
-          to="/"
-          hash="contato"
+        <a
+          href={nexaWhatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden rounded-full border border-primary/40 px-5 py-2.5 text-[13px] font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground lg:inline-flex"
         >
           Falar com a NEXA
-        </Link>
+        </a>
         <button
           onClick={() => setOpen((o) => !o)}
           className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground lg:hidden"
@@ -70,14 +73,15 @@ export function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/"
-              hash="contato"
+            <a
+              href={nexaWhatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-4 flex h-12 items-center justify-center rounded-full bg-primary text-sm font-semibold text-primary-foreground"
             >
               Falar com a NEXA
-            </Link>
+            </a>
           </nav>
         </div>
       </div>
@@ -87,9 +91,9 @@ export function Navbar() {
 
 export function Footer() {
   const socials = [
-    { label: "Instagram", icon: Instagram },
-    { label: "WhatsApp", icon: MessageCircle },
-    { label: "E-mail", icon: Mail },
+    { label: "Instagram", value: "@lucasd_zs", href: "https://www.instagram.com/lucasd_zs/", icon: Instagram },
+    { label: "WhatsApp", value: "(11) 93413-6539", href: nexaWhatsapp, icon: MessageCircle },
+    { label: "E-mail", value: "lucascdmatias5@gmail.com", href: "mailto:lucascdmatias5@gmail.com", icon: Mail },
   ];
   return (
     <footer id="contato" className="border-t border-border">
@@ -116,13 +120,14 @@ export function Footer() {
         <div className="md:col-span-4">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-foreground/50">Contato</p>
           <ul className="mt-5 space-y-3">
-            {socials.map(({ label, icon: Icon }) => (
-              <li key={label} className="flex items-center gap-3 text-sm text-muted-foreground">
+            {socials.map(({ label, value, href, icon: Icon }) => (
+              <li key={label}>
+                <a href={href} target={href.startsWith("https:") ? "_blank" : undefined} rel={href.startsWith("https:") ? "noopener noreferrer" : undefined} className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary" aria-label={`${label}: ${value}`}>
                 <span className="flex h-9 w-9 items-center justify-center rounded-full border border-border">
                   <Icon size={15} />
                 </span>
-                {label}
-                <span className="text-xs text-foreground/35">— em breve</span>
+                <span className="min-w-0 break-all">{value}</span>
+                </a>
               </li>
             ))}
           </ul>
