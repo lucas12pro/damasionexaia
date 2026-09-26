@@ -9,3 +9,9 @@
 - [x] Restringir Profissional a consultar produtos/pacotes e registrar venda/uso, sem administração ou contatos
 - [x] Adicionar catálogos administrativos de Produtos e Pacotes
 - [x] Validar fluxos novos em desktop e celular
+
+- [x] Inserir contatos reais e conectar botões de contato da NEXA
+- [x] Ajustar rótulos mobile do profissional e confirmar ausência da aba Agendamento
+- [x] Retirar cancelados da comanda ativa sem perder histórico na agenda/relatórios
+- [x] Abrir perfil individual na Equipe com dados existentes e indicar dados indisponíveis
+- [x] Validar Agenda, Equipe, Atendimentos e acesso Profissional no celular e desktop
