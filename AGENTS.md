@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep barber demo role views and team profiles local to the existing client-side demo; this preserves mock-only behavior without introducing backend access or separate routes.
+- Expose only public NEXA business information through the unauthenticated MCP server, never mock barber customer records; the demo is not an authenticated data source.

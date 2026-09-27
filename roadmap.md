@@ -15,3 +15,6 @@
 - [x] Retirar cancelados da comanda ativa sem perder histórico na agenda/relatórios
 - [x] Abrir perfil individual na Equipe com dados existentes e indicar dados indisponíveis
 - [x] Validar Agenda, Equipe, Atendimentos e acesso Profissional no celular e desktop
+
+- [x] Limitar as ferramentas MCP públicas a soluções, projetos demonstrativos e contato comercial
+- [x] Configurar o servidor MCP na aplicação e verificar seu catálogo
