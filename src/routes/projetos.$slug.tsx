@@ -14,7 +14,7 @@ export const Route = createFileRoute("/projetos/$slug")({
     if (!loaderData) return { meta: [{ title: "Projeto não encontrado" }, { name: "robots", content: "noindex" }] };
     const { name, stack } = loaderData.project;
     const title = `${name} — Projeto demonstrativo | DAMASIO NEXA.I.A`;
-    const description = `Projeto demonstrativo ${name}: ${stack}. Demonstração em preparação.`;
+    const description = `Projeto demonstrativo ${name}: ${stack}. ${loaderData.project.result}`;
     return {
       meta: [
         { title },
@@ -50,6 +50,11 @@ function ProjectPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">Projeto {project.num} · Demonstrativo</p>
         <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-6xl">{project.name}</h1>
         <p className="mt-5 text-lg text-muted-foreground">{project.stack}</p>
+        <dl className="mt-10 grid gap-6 border-y border-border py-7 sm:grid-cols-3">
+          <div><dt className="text-xs font-semibold uppercase text-primary">Desafio</dt><dd className="mt-2 text-sm leading-relaxed text-muted-foreground">{project.problem}</dd></div>
+          <div><dt className="text-xs font-semibold uppercase text-primary">Proposta</dt><dd className="mt-2 text-sm leading-relaxed text-muted-foreground">{project.solution}</dd></div>
+          <div><dt className="text-xs font-semibold uppercase text-primary">Estado</dt><dd className="mt-2 text-sm leading-relaxed text-muted-foreground">{project.result}</dd></div>
+        </dl>
         <div className="mt-12 rounded-2xl border border-border bg-card p-8">
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-secondary">
             <span className="pulse-dot h-1.5 w-1.5 rounded-full bg-secondary" /> Em preparação

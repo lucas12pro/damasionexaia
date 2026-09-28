@@ -9,7 +9,7 @@ import { projects } from "@/lib/projects";
 import founder from "@/assets/founder.png.asset.json";
 
 const TITLE = "DAMASIO NEXA.I.A — Soluções digitais inteligentes para negócios";
-const DESC = "Inteligência Artificial, sites, CRM e automações para negócios que querem vender, atender e operar de forma mais inteligente.";
+const DESC = "A DAMASIO NEXA.I.A cria IA, automações, sites e sistemas para empresas atenderem melhor, organizarem processos e ganharem eficiência.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -65,7 +65,7 @@ const chain = [
 
 function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center pt-24">
+    <section className="relative flex min-h-[85svh] items-center pt-24 lg:min-h-[88svh]">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-[0.35]"
@@ -80,13 +80,13 @@ function Hero() {
           <Reveal><Eyebrow>Soluções digitais para negócios</Eyebrow></Reveal>
           <Reveal delay={100}>
             <h1 className="mt-8 text-[2.35rem] font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.9rem]">
-              Seu negócio não precisa trabalhar mais.{" "}
-              <span className="text-primary">Precisa trabalhar de forma mais inteligente.</span>
+              DAMASIO NEXA.I.A: soluções digitais para o seu negócio.{" "}
+              <span className="text-primary">Menos processos manuais. Mais inteligência.</span>
             </h1>
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Criamos soluções digitais que conectam atendimento, vendas e relacionamento — tornando processos mais simples, organizados e eficientes.
+              IA, automação, sites e sistemas para empresas que querem atender melhor, organizar a operação e vender com mais clareza.
             </p>
           </Reveal>
           <Reveal delay={300}>
@@ -94,9 +94,7 @@ function Hero() {
               <Link to="/" hash="solucoes" className="group inline-flex h-13 items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]">
                 Conhecer soluções <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link to="/" hash="projetos" className="inline-flex items-center justify-center rounded-full border border-border px-7 py-4 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary">
-                Ver projetos
-              </Link>
+              <a href={nexaWhatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-border px-7 py-4 text-sm font-semibold text-foreground transition-colors hover:border-primary/50 hover:text-primary">Falar com a NEXA</a>
             </div>
           </Reveal>
         </div>
@@ -347,11 +345,14 @@ function Projects() {
               </span>
               <div className="relative flex items-center justify-between">
                 <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-muted-foreground">Projeto {p.num}</span>
-                <span className="rounded-full border border-border px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-foreground/60">Demonstrativo</span>
+                 <span className="rounded-full border border-border px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-foreground/60">{p.status}</span>
               </div>
               <div className="relative mt-16">
                 <h3 className="text-2xl font-bold uppercase tracking-[0.08em] md:text-3xl">{p.name}</h3>
                 <p className="mt-3 text-sm text-muted-foreground">{p.stack}</p>
+                 <p className="mt-5 text-xs leading-relaxed text-muted-foreground"><span className="font-semibold text-foreground">Desafio:</span> {p.problem}</p>
+                 <p className="mt-2 text-xs leading-relaxed text-muted-foreground"><span className="font-semibold text-foreground">Proposta:</span> {p.solution}</p>
+                 <p className="mt-2 text-xs leading-relaxed text-muted-foreground"><span className="font-semibold text-foreground">Na prática:</span> {p.result}</p>
                 <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary">
                   {p.cta} <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </span>

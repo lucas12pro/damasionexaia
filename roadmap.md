@@ -18,3 +18,7 @@
 
 - [x] Limitar as ferramentas MCP públicas a soluções, projetos demonstrativos e contato comercial
 - [x] Configurar o servidor MCP na aplicação e verificar seu catálogo
+
+- [ ] Revisar apresentação pública, projetos demonstrativos, contatos e metadados sem alterar MCP
+- [ ] Corrigir ações sem efeito e confirmações enganosas na demonstração da barbearia
+- [ ] Validar navegação, privacidade e responsividade em celular, tablet e desktop
