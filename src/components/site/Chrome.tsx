@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Instagram, MessageCircle, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const nexaWhatsapp = "https://wa.me/5511934136539";
 
@@ -56,14 +57,15 @@ export function Navbar() {
         >
           Falar com a NEXA
         </a>
-        <button
+        <Button
+          variant="ghost"
           onClick={() => setOpen((o) => !o)}
           className="flex h-11 w-11 items-center justify-center rounded-full border border-border text-foreground lg:hidden"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
         >
           {open ? <X size={18} /> : <Menu size={18} />}
-        </button>
+        </Button>
       </div>
       <div className={`grid overflow-hidden transition-all duration-500 lg:hidden ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
         <div className="min-h-0">
