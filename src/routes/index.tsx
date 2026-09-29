@@ -195,11 +195,11 @@ function Problem() {
 
 /* ---------------- SOLUTIONS ---------------- */
 const solutions = [
-  { icon: Sparkles, t: "IA", d: "Agentes capazes de atender, orientar e encaminhar clientes.", bars: [40, 70, 55, 85] },
-  { icon: Monitor, t: "Sites & Landing Pages", d: "Experiências digitais pensadas para apresentar o negócio e conduzir o cliente.", bars: [60, 45, 80, 65] },
-  { icon: Users, t: "CRM", d: "Clientes, histórico, vendas e oportunidades organizados em um só lugar.", bars: [30, 55, 70, 90] },
-  { icon: Workflow, t: "Automações", d: "Processos que continuam funcionando mesmo quando você está ocupado.", bars: [75, 60, 85, 70] },
-  { icon: Boxes, t: "Sistemas Personalizados", d: "Ferramentas desenvolvidas para necessidades específicas de cada negócio.", bars: [20, 35, 25, 40], soon: true },
+  { icon: Sparkles, t: "Agentes de IA", d: "Projetos de atendimento inteligente para orientar e encaminhar solicitações.", bars: [40, 70, 55, 85] },
+  { icon: Monitor, t: "Sites & Landing Pages", d: "Páginas comerciais para apresentar serviços e conduzir o contato.", bars: [60, 45, 80, 65] },
+  { icon: Users, t: "CRM e gestão de clientes", d: "Organização de clientes, histórico e oportunidades em um só lugar.", bars: [30, 55, 70, 90] },
+  { icon: Workflow, t: "Integrações e automações", d: "Conexão entre ferramentas e automação de etapas repetitivas do atendimento.", bars: [75, 60, 85, 70] },
+  { icon: Boxes, t: "Sistemas e dashboards", d: "Sistemas personalizados e painéis para necessidades específicas de cada operação.", bars: [20, 35, 25, 40], soon: true },
 ];
 
 function Solutions() {
