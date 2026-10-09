@@ -416,7 +416,7 @@ function Founder() {
         <Reveal className="lg:col-span-6">
           <div className="overflow-hidden rounded-2xl border border-border">
             <img
-              src={founder.url}
+              src="/lucas-damasio.png"}
               alt="Lucas Damasio, fundador da DAMASIO NEXA.I.A, em seu escritório"
               className="aspect-[6/5] w-full object-cover"
               loading="lazy"
