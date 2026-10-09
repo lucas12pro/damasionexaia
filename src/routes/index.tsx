@@ -196,7 +196,8 @@ function Problem() {
 /* ---------------- SOLUTIONS ---------------- */
 const solutions = [
   { icon: Sparkles, t: "Agentes de IA", d: "Projetos de atendimento inteligente para orientar e encaminhar solicitações.", bars: [40, 70, 55, 85] },
-  { icon: Monitor, t: "Sites & Landing Pages", d: "Páginas comerciais para apresentar serviços e conduzir o contato.", bars: [60, 45, 80, 65] },
+  { icon: MessagesSquare, t: "Automação de atendimento", d: "Fluxos para organizar solicitações e reduzir tarefas repetitivas no atendimento.", bars: [35, 60, 75, 90] },
+  { icon: Monitor, t: "Landing Pages e sites", d: "Páginas comerciais para apresentar serviços e conduzir o contato.", bars: [60, 45, 80, 65] },
   { icon: Users, t: "CRM e gestão de clientes", d: "Organização de clientes, histórico e oportunidades em um só lugar.", bars: [30, 55, 70, 90] },
   { icon: Workflow, t: "Integrações e automações", d: "Conexão entre ferramentas e automação de etapas repetitivas do atendimento.", bars: [75, 60, 85, 70] },
   { icon: Boxes, t: "Sistemas e dashboards", d: "Sistemas personalizados e painéis para necessidades específicas de cada operação.", bars: [20, 35, 25, 40], soon: true },
@@ -213,7 +214,7 @@ function Solutions() {
       </Reveal>
       <div className="mt-16 grid gap-5 md:grid-cols-2 lg:grid-cols-6">
         {solutions.map((s, i) => (
-          <Reveal key={s.t} delay={i * 80} className={`h-full ${i < 2 ? "lg:col-span-3" : "lg:col-span-2"}`}>
+          <Reveal key={s.t} delay={i * 80} className={`h-full ${"lg:col-span-2"}`}>
             <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all duration-500 hover:-translate-y-1 hover:border-primary/40">
               <div className="flex items-start justify-between">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-border text-primary transition-colors group-hover:border-primary/40">
