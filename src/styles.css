@@ -205,3 +205,13 @@ body { font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif; -webkit-
   --overlay: oklch(0 0 0 / 70%);
   font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif;
 }
+
+.agenda-grid { --agenda-clock: 76px; }
+@media (max-width: 767px) {
+ .agenda-grid { --agenda-clock: 42px; }
+ .agenda-grid button { overflow-wrap: anywhere; white-space: normal; }
+ .professional-history thead { display: none; }
+ .professional-history tr { display: block; padding-block: 12px; }
+ .professional-history td { display: flex; justify-content: space-between; gap: 16px; padding: 6px 0; font-size: 12px; }
+ .professional-history td::before { content: attr(data-label); color: var(--muted-foreground); font-weight: 400; }
+}
